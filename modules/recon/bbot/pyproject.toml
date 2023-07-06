@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "bbot"
+version = "1.0.3"
+description = "OSINT automation for hackers."
+authors = ["TheTechromancer"]
+license = "GPL-3.0"
+readme = "README.md"
+repository = "https://github.com/blacklanternsecurity/bbot"
+homepage = "https://github.com/blacklanternsecurity/bbot"
+
+[tool.poetry.scripts]
+bbot = 'bbot.cli:main'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+omegaconf = "^2.3.0"
+tldextract = "^3.4.0"
+psutil = "^5.9.4"
+wordninja = "^2.0.0"
+requests = "^2.28.2"
+dnspython = "^2.3.0"
+pydantic = "^1.10.6"
+ansible-runner = "^2.3.2"
+deepdiff = "^6.2.3"
+xmltojson = "^2.0.2"
+pycryptodome = "^3.17"
+idna = "^3.4"
+ansible = "^7.3.0"
+websocket-client = "^1.5.1"
+tabulate = "0.8.10"
+cloudcheck = "^2.0.0.34"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+flake8 = "^6.0.0"
+black = "^23.1.0"
+pytest-cov = "^4.0.0"
+requests-mock = "^1.10.0"
+poetry-dynamic-versioning = "^0.21.4"
+pytest-httpserver = "^1.0.6"
+pytest-rerunfailures = "^11.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.black]
+line-length = 119
+
+[tool.poetry-dynamic-versioning]
+enable = true
+metadata = false
+format-jinja = 'v1.0.5.{{ distance }}{% if branch == "dev" %}rc{% endif %}'
+
+[tool.poetry-dynamic-versioning.substitution]
+files = ["*/__init__.py"]

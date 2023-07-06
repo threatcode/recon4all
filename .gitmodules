@@ -1,0 +1,90 @@
+[submodule "modules/recon/magicRecon"]
+	path = modules/recon/magicRecon
+	url = https://github.com/robotshell/magicRecon
+[submodule "modules/recon/SQLRecon"]
+	path = modules/recon/SQLRecon
+	url = https://github.com/skahwah/SQLRecon
+[submodule "modules/recon/theftfuzzer"]
+	path = modules/recon/theftfuzzer
+	url = https://github.com/lc/theftfuzzer
+[submodule "modules/recon/routersploit"]
+	path = modules/recon/routersploit
+	url = https://github.com/threat9/routersploit
+[submodule "modules/recon/amass"]
+	path = modules/recon/amass
+	url = https://github.com/owasp-amass/amass
+[submodule "modules/recon/reconftw"]
+	path = modules/recon/reconftw
+	url = https://github.com/six2dez/reconftw
+[submodule "modules/recon/Arjun"]
+	path = modules/recon/Arjun
+	url = https://github.com/s0md3v/Arjun
+[submodule "modules/recon/hakrawler"]
+	path = modules/recon/hakrawler
+	url = https://github.com/hakluke/hakrawler
+[submodule "modules/recon/scan4all"]
+	path = modules/recon/scan4all
+	url = https://github.com/hktalent/scan4all
+[submodule "modules/recon/discover"]
+	path = modules/recon/discover
+	url = https://github.com/leebaird/discover
+[submodule "modules/recon/pentest-modules/recon"]
+	path = modules/recon/pentest-modules/recon
+	url = https://github.com/gwen001/pentest-modules/recon
+[submodule "modules/recon/bbot"]
+	path = modules/recon/bbot
+	url = https://github.com/blacklanternsecurity/bbot
+[submodule "modules/recon/Striker"]
+	path = modules/recon/Striker
+	url = https://github.com/s0md3v/Striker
+[submodule "modules/recon/reconspider"]
+	path = modules/recon/reconspider
+	url = https://github.com/bhavsec/reconspider
+[submodule "modules/recon/ReconDog"]
+	path = modules/recon/ReconDog
+	url = https://github.com/s0md3v/ReconDog
+[submodule "modules/recon/sn0int"]
+	path = modules/recon/sn0int
+	url = https://github.com/kpcyrd/sn0int
+[submodule "modules/databases/sqlmap"]
+	path = modules/databases/sqlmap
+	url = https://github.com/sqlmapproject/sqlmap
+[submodule "modules/databases/w3af"]
+	path = modules/databases/w3af
+	url = https://github.com/andresriancho/w3af
+[submodule "modules/databases/sql-injection-payload-list"]
+	path = modules/databases/sql-injection-payload-list
+	url = https://github.com/payloadbox/sql-injection-payload-list
+[submodule "modules/databases/NoSQLMap"]
+	path = modules/databases/NoSQLMap
+	url = https://github.com/codingo/NoSQLMap
+[submodule "modules/databases/jsql-injection"]
+	path = modules/databases/jsql-injection
+	url = https://github.com/ron190/jsql-injection
+[submodule "modules/databases/sqliv"]
+	path = modules/databases/sqliv
+	url = https://github.com/the-robot/sqliv
+[submodule "modules/databases/leviathan"]
+	path = modules/databases/leviathan
+	url = https://github.com/utkusen/leviathan
+[submodule "modules/recon/Zeus-Scanner"]
+	path = modules/recon/Zeus-Scanner
+	url = https://github.com/Ekultek/Zeus-Scanner
+[submodule "modules/databases/sqli-hunter"]
+	path = modules/databases/sqli-hunter
+	url = https://github.com/zt2/sqli-hunter
+[submodule "modules/databases/Blisqy"]
+	path = modules/databases/Blisqy
+	url = https://github.com/JohnTroony/Blisqy
+[submodule "modules/databases/AutoSQLi"]
+	path = modules/databases/AutoSQLi
+	url = https://github.com/clouedoc/AutoSQLi
+[submodule "modules/databases/inject-some-sql"]
+	path = modules/databases/inject-some-sql
+	url = https://github.com/presidentbeef/inject-some-sql
+[submodule "modules/databases/sqlscan"]
+	path = modules/databases/sqlscan
+	url = https://github.com/Cvar1984/sqlscan
+[submodule "modules/databases/sqlite-lab"]
+	path = modules/databases/sqlite-lab
+	url = https://github.com/incredibleindishell/sqlite-lab

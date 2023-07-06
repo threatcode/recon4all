@@ -1,0 +1,138 @@
+Kali
+
+# Download VM and verify the hash
+
+https://www.kali.org/get-kali/#kali-virtual-machines
+Select 64-bit VMware Weekly
+
+- macOS
+1. Open Terminal
+2. shasum -a 256 /path/to/file
+3. Compare the value to the checksum on the website.
+
+- Windows
+1. Open PowerShell
+2. Get-FileHash C:\path\to\file
+3. Compare the value to the checksum on the website.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Change default password
+
+Login with kali:kali
+passwd
+Enter new password 2x.
+sudo -i
+Enter new password.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Disable screen lock
+
+Click on the battery icon > Settings
+Display > drag the top slider to the right (changes all to 60 minutes)
+Repeat for Plugged in settings > Close
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Desktop
+
+Right click on the Desktop > Desktop Settings
+Icons > Default Icons: uncheck Home, File System, and Trash
+Close
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Terminal
+
+File > Preferences
+Appearance
+     Font: 12
+     Application transparency: 0%
+OK
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Shell
+
+kali-tweaks
+Select Shell & Prompt > Command Prompt
+Select One Line > Apply > OK > enter > esc 3x
+
+Open a new tab in Terminal (kali user) and repeat the steps above.
+Close the Terminal (both tabs).
+Open a new Terminal. The shell should now be a single line.
+sudo -i
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Mousepad
+
+mousepad
+
+Edit > Preferences
+View
+     Uncheck Use system monospace font
+     Font: 12
+Editor
+     Tab width: 5
+     Tab mode: Insert Spaces
+Close preferenes > close mousepad
+
+Open a new tab in Terminal and repeat the same steps for the kali shell.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Timezone
+
+Go to the root tab in Terminal
+timedatectl set-timezone America/<city>
+Eastern: New_York
+Central: Chicago
+Mountain: Denver
+Pacific: Los_Angeles
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Patch the OS
+
+apt update ; apt -y upgrade ; apt -y dist-upgrade ; apt -y autoremove ; apt -y autoclean ; updatedb
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Install Discover scripts and additional GitHub repos (root shell)
+
+git clone https://github.com/leebaird/discover /opt/discover/
+cd /opt/discover/config/
+./install.sh
+
+Change to the kali user tab
+cd /opt/discover/config/
+./install.sh
+exit
+
+cd ~
+source .zshrc
+update
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Install additional tools
+
+- Apache Directory Studio
+https://directory.apache.org/studio/download/download-linux.html
+cd /home/kali/Downloads/
+tar zxf <package>
+mv ApacheDirectoryStudio /opt/
+rm <package>
+
+- Nim
+https://nim-lang.org/install_unix.html
+Download x86_64 tarball
+tar xf <package>
+mv nim-1.6.12 /opt/
+echo 'export PATH=$PATH:/opt/nim-1.6.12/bin/' >> ~/.zshrc
+source ~/.zshrc
+
+- PyCharm
+https://www.jetbrains.com/pycharm/download/#section=linux
+tar zxf <package>
+mv pycharm-community-2022.3.3 /opt/
+rm <package>
+
+- Terraform
+https://www.terraform.io/downloads
+Linux > Binary download for Linux > AMD64
+unzip <package>
+mv terraform /usr/local/bin/
+rm <package>
