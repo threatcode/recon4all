@@ -482,7 +482,7 @@ dependencies = [
  "rustls 0.16.0",
  "serde",
  "serde_derive",
- "tokio",
+ "tokio 0.1.22",
  "trust-dns",
  "webpki-roots 0.18.0",
 ]
@@ -1791,7 +1791,7 @@ dependencies = [
  "net2",
  "rustc_version 0.2.3",
  "time 0.1.45",
- "tokio",
+ "tokio 0.1.22",
  "tokio-buf",
  "tokio-executor",
  "tokio-io",
@@ -3065,6 +3065,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "pin-project-lite"
+version = "0.2.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4c40d25201921e5ff0c862a505c6557ea88568a4e3ace775ab55e93f2f4f9d57"
+
+[[package]]
 name = "pkg-config"
 version = "0.3.26"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3577,7 +3583,7 @@ dependencies = [
  "serde_json",
  "serde_urlencoded 0.5.5",
  "time 0.1.45",
- "tokio",
+ "tokio 0.1.22",
  "tokio-executor",
  "tokio-io",
  "tokio-threadpool",
@@ -4316,7 +4322,7 @@ dependencies = [
  "serde_urlencoded 0.7.1",
  "sodiumoxide",
  "thiserror",
- "tokio",
+ "tokio 1.18.5",
  "tungstenite",
  "url 2.3.1",
  "webpki",
@@ -4759,6 +4765,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "tokio"
+version = "1.18.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0e050c618355082ae5a89ec63bbf897225d5ffe84c7c4e036874e4d185a5044e"
+dependencies = [
+ "pin-project-lite",
+]
+
+[[package]]
 name = "tokio-buf"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4996,7 +5011,7 @@ dependencies = [
  "log 0.4.17",
  "radix_trie 0.1.6",
  "rand 0.7.3",
- "tokio",
+ "tokio 0.1.22",
  "tokio-tcp",
  "tokio-udp",
  "trust-dns-proto",
