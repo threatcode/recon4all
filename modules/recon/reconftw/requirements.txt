@@ -36,3 +36,4 @@ tqdm                    # multiple
 ujson                   # multiple
 urllib3                 # multiple
 subgpt                  # Tool
+pillow>=10.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
