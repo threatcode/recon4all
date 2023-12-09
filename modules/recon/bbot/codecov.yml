@@ -1,8 +1,0 @@
-coverage:
-  range: 25..75
-  round: up
-  precision: 0
-  status:
-    project: off
-    patch: off
-github_checks: false

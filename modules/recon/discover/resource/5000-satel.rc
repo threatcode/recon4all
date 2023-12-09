@@ -1,6 +1,0 @@
-setg RHOSTS file:
-setg THREADS 255
-setg RPORT 5000
-
-use auxiliary/scanner/telnet/satel_cmd_exec
-run

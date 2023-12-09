@@ -1,6 +1,0 @@
-setg RHOSTS file:
-setg THREADS 255
-setg RPORT 1414
-
-use auxiliary/scanner/misc/ibm_mq_enum
-run

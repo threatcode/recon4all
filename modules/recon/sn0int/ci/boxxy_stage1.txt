@@ -1,5 +1,0 @@
-stage1
-ls
-echo checkpoint1
-id
-echo sandbox fail

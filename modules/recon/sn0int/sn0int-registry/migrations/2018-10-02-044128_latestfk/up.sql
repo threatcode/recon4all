@@ -1,3 +1,0 @@
-ALTER TABLE modules DROP CONSTRAINT latestfk;
-ALTER TABLE modules DROP COLUMN latest;
-ALTER TABLE modules ADD COLUMN latest VARCHAR;

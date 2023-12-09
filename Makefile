@@ -178,8 +178,9 @@ pseudoxml:
 
 github:
 	touch $(BUILDDIR)/html/.nojekyll
-	echo "threatcode.github.io" > $(BUILDDIR)/html/CNAME
-	ghp-import -b gh-pages -c threatcode.github.io -m "Travis.ci automated site building" -n _build/html
+	echo "awesomehacking.org" > $(BUILDDIR)/html/CNAME
+	ghp-import -b gh-pages -c awesomehacking.org -m "Travis.ci automated site building" -n _build/html
 
 purge:
 	curl -X DELETE "https://api.cloudflare.com/client/v4/zones/${CF_ZONEID}/purge_cache" -H "X-Auth-Email: ${CF_EMAIL}" -H "X-Auth-Key: ${CF_AUTH}" -H "Content-Type: application/json" --data '{"purge_everything":true}'
+

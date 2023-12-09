@@ -1,3 +1,0 @@
-[submodule "config/nuclei-templates"]
-	path = config/nuclei-templates
-	url = https://github.com/projectdiscovery/nuclei-templates.git
